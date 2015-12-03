@@ -1,0 +1,10 @@
+scriptId = 'com.balandinodidonato.unlock' -- define the script ID
+scriptTitle = "unlock" -- define the script title
+scriptDetailsUrl = "" 
+
+
+function onForegroundWindowChange(app, title)     -- Here we decide if we want to control the new active app.
+    local wantActive = true
+    myo.unlock("hold")
+    return wantActive
+end
