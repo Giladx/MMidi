@@ -103,8 +103,8 @@ if (MIDI) {
      
    if(OpenSoundControl){  
     
-     OscMessage Emg = new OscMessage("/emg");
-     OscMessage emgAvg = new OscMessage("/emgAvg"); 
+     OscMessage Emg = new OscMessage("/layer5/video/opacity/values");
+     OscMessage emgAvg = new OscMessage("/layer6/video/opacity/values"); 
      
      Emg.add(emg);
      emgAvg.add(intensity);

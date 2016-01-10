@@ -15,7 +15,7 @@ if(MIDI){
     }
     
 if(OpenSoundControl){  
-    OscMessage acc = new OscMessage("/acc");
+    OscMessage acc = new OscMessage("/layer4/video/opacity/values");
    
     acc.add(acceleration.x); //  0-2PI
     acc.add(acceleration.y); //  0-2PI

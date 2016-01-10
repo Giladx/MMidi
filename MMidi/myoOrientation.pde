@@ -90,7 +90,7 @@ if(MIDI){
      
  if(OpenSoundControl){ 
     
-    OscMessage orient = new OscMessage("/orientation");
+    OscMessage orient = new OscMessage("/layer2/video/opacity/values");
    
     orient.add(yaw);
     orient.add(pitch);

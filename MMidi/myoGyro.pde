@@ -16,7 +16,7 @@ void sendGyro(){
 if(OpenSoundControl){
 
 
-    OscMessage Gyro = new OscMessage("/gyro");
+    OscMessage Gyro = new OscMessage("/layer1/video/opacity/values");
    
     Gyro.add(gyro.x);
     Gyro.add(gyro.y);

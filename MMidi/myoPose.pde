@@ -28,7 +28,7 @@ void sendPose(){
    }  
    
    if(OpenSoundControl){ 
-    OscMessage Pose = new OscMessage("/pose");
+    OscMessage Pose = new OscMessage("/layer3/video/opacity/values");
     
     Pose.add(pose);
     Pose.add(poseInt);
